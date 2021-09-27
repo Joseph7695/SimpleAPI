@@ -20,7 +20,7 @@ namespace SimpleAPI.Tests
         public void Test1()
         {
             var value = controller.Get();
-            Assert.Equal(0, value.Count());
+            Assert.NotEmpty(value);
         }
     }
 }
