@@ -9,11 +9,18 @@ namespace SimpleAPI.Tests
     public class UnitTest1
     {
         WeatherForecastController controller = new WeatherForecastController(NullLogger<WeatherForecastController>.Instance);
+
+        [Fact]
+        public void EmptyTest()
+        {
+            Console.WriteLine("HELLO WORLD TEST");
+        }
+
         [Fact]
         public void Test1()
         {
             var value = controller.Get();
-            Assert.Equal(5, value.Count());
+            Assert.Equal(0, value.Count());
         }
     }
 }
