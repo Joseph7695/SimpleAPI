@@ -35,5 +35,11 @@ namespace SimpleAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        public string Test()
+        {
+            return "Hello World";
+        }
     }
 }
